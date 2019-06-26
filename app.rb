@@ -5,6 +5,9 @@ get '/newteam' do
   erb:newteam
 end
 post '/team'do
-erb:team
+post '/team' do
+  @team = params
+  erb :team
+end
 end
 end
